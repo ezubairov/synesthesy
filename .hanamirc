@@ -1,0 +1,4 @@
+project=shijima
+architecture=container
+test=minitest
+template=erb
