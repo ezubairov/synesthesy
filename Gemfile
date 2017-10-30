@@ -28,7 +28,7 @@ group :development do
 
   gem 'capistrano', '~> 3.7'
   gem 'capistrano-hanami'
-  gem 'capistrano-puma'
+  gem 'capistrano3-puma'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm'
 end
