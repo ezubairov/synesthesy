@@ -1,4 +1,4 @@
-project=shijima
+project=synesthesy
 architecture=container
 test=minitest
 template=erb

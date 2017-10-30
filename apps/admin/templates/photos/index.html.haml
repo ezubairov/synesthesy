@@ -1,0 +1,12 @@
+= link_to 'Новая фотография', routes.new_photo_path
+
+- unless photos.nil?
+  - photos.each do |photo|
+    - if photo.name
+      %div
+        = photo.name
+    - if photo.image_data
+      %div
+        = link_to_photo(photo)
+- else
+  %h3 No photos present!

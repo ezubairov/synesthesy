@@ -1,0 +1,5 @@
+.row
+  #lightgallery
+    - photos.each do |photo|
+      %a(href="#{photo.image[:original].url}" data-sub-html="<h4>#{photo.name}</h4><p>#{photo.comment}</p>")
+        %img(src="#{photo.image[:thumbnail].url}")

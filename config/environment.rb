@@ -1,10 +1,12 @@
 require 'bundler/setup'
 require 'hanami/setup'
 require 'hanami/model'
-require_relative '../lib/shijima'
+require_relative '../lib/synesthesy'
+require_relative '../apps/admin/application'
 require_relative '../apps/web/application'
 
 Hanami.configure do
+  mount Admin::Application, at: '/admin'
   mount Web::Application, at: '/'
 
   model do
@@ -14,9 +16,9 @@ Hanami.configure do
     # Available options:
     #
     #  * SQL adapter
-    #    adapter :sql, 'sqlite://db/shijima_development.sqlite3'
-    #    adapter :sql, 'postgresql://localhost/shijima_development'
-    #    adapter :sql, 'mysql://localhost/shijima_development'
+    #    adapter :sql, 'sqlite://db/synesthesy_development.sqlite3'
+    #    adapter :sql, 'postgresql://localhost/synesthesy_development'
+    #    adapter :sql, 'mysql://localhost/synesthesy_development'
     #
     adapter :sql, ENV['DATABASE_URL']
 
@@ -28,7 +30,7 @@ Hanami.configure do
   end
 
   mailer do
-    root 'lib/shijima/mailers'
+    root 'lib/synesthesy/mailers'
 
     # See http://hanamirb.org/guides/mailers/delivery
     delivery :test
