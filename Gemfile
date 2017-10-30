@@ -9,6 +9,7 @@ gem 'pg'
 gem 'bcrypt'
 
 gem 'puma'
+gem 'dotenv', '~> 2.0'
 
 gem 'haml'
 gem 'sass'
@@ -27,18 +28,16 @@ group :development do
 
   gem 'capistrano', '~> 3.7'
   gem 'capistrano-hanami'
+  gem 'capistrano-puma'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
 end
 
 group :test, :development do
-  gem 'dotenv', '~> 2.0'
   gem 'pry'
 end
 
 group :test do
   gem 'minitest'
   gem 'capybara'
-end
-
-group :production do
-  # gem 'puma'
 end

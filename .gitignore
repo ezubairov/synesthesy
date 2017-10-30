@@ -2,3 +2,5 @@
 /public/uploads*
 /tmp
 /.idea
+.env*
+/log
