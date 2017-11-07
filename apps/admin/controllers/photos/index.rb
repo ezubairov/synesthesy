@@ -4,7 +4,7 @@ module Admin::Controllers::Photos
 
     expose :photos
 
-    def call(params)
+    def call(_)
       @photos = PhotoRepository.new.all
     end
   end

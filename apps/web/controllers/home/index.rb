@@ -5,7 +5,7 @@ module Web::Controllers::Home
     expose :pages
     expose :photos
 
-    def call(params)
+    def call(_)
       @pages = PageRepository.new.all
       @photos = PhotoRepository.new.home_page_photos
     end
