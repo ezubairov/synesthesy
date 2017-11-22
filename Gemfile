@@ -11,7 +11,7 @@ gem 'bcrypt'
 gem 'puma'
 gem 'dotenv', '~> 2.0'
 
-gem 'haml'
+gem 'slim'
 gem 'sass'
 gem 'coffee-script'
 
@@ -26,11 +26,11 @@ group :development do
   # See: http://hanamirb.org/guides/projects/code-reloading
   gem 'shotgun'
 
-  gem 'capistrano', '~> 3.7'
-  gem 'capistrano-hanami'
-  gem 'capistrano3-puma'
-  gem 'capistrano-bundler'
-  gem 'capistrano-rvm'
+  # gem 'capistrano', '~> 3.7'
+  # gem 'capistrano-hanami'
+  # gem 'capistrano3-puma'
+  # gem 'capistrano-bundler'
+  # gem 'capistrano-rvm'
 end
 
 group :test, :development do

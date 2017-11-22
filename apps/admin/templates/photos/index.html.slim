@@ -3,10 +3,10 @@
 - unless photos.nil?
   - photos.each do |photo|
     - if photo.name
-      %div
+      div
         = photo.name
     - if photo.image_data
-      %div
+      div
         = link_to_photo(photo)
 - else
-  %h3 No photos present!
+  h3 No photos present!
