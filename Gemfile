@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'hanami',       '~> 1.0'
-gem 'hanami-model', '~> 1.0'
+gem 'hanami',       '~> 1.1'
+gem 'hanami-model', '~> 1.1'
+
+gem 'rom'
+gem 'rom-sql'
 
 gem 'pg'
 
@@ -20,6 +23,8 @@ gem 'telegram-bot-ruby'
 gem 'hanami-shrine'
 gem 'image_processing'
 gem 'mini_magick', '>= 4.3.5'
+
+gem 'i18n'
 
 group :development do
   # Code reloading

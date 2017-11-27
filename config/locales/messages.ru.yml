@@ -1,0 +1,88 @@
+ru:
+  errors:
+    or: или
+    array?: должно быть массивом
+    empty?: должно быть пустым
+    excludes?: "не должно содержать %{value}"
+    excluded_from?:
+      arg:
+        default: "не должно быть одним из: %{list}"
+        range: "не должно быть одним из: %{list_left} - %{list_right}"
+    exclusion?: "не должно быть одним из: %{list}"
+    eql?: "должно быть равно %{left}"
+    not_eql?: "не должно быть равно %{left}"
+    filled?: является обязательным
+    format?: "имеет неверный формат"
+    number?: "должно быть числом"
+    odd?: "должно быть нечетным"
+
+    even?: "должно быть четным"
+
+    gt?: "должно быть больше чем %{num}"
+
+    gteq?: "должно быть равно или больше чем %{num}"
+
+    hash?: "должно быть хэшом"
+
+    included_in?:
+      arg:
+        default: "должно быть одним из: %{list}"
+        range: "должно быть одним из: %{list_left} - %{list_right}"
+    inclusion?: "должно быть одним из: %{list}"
+
+    includes?: "должно содержать %{value}"
+
+    bool?: "must be boolean"
+
+    true?: "must be true"
+
+    false?: "must be false"
+
+    int?: "must be an integer"
+
+    float?: "must be a float"
+
+    decimal?: "must be a decimal"
+
+    date?: "must be a date"
+
+    date_time?: "must be a date time"
+
+    time?: "must be a time"
+
+    key?: "отсутствует"
+
+    attr?: "отсутствует"
+
+    lt?: "must be less than %{num}"
+
+    lteq?: "must be less than or equal to %{num}"
+
+    max_size?: "size cannot be greater than %{num}"
+
+    min_size?: "size cannot be less than %{num}"
+
+    none?: "cannot be defined"
+
+    str?: "must be a string"
+
+    type?: "must be %{type}"
+
+    size?:
+      arg:
+        default: "size must be %{size}"
+        range: "size must be within %{size_left} - %{size_right}"
+
+      value:
+        string:
+          arg:
+            default: "length must be %{size}"
+            range: "length must be within %{size_left} - %{size_right}"
+    contact_form:
+      rules:
+        phone_number_or_email:
+          filled?: '- укажите один из'
+  rules:
+    contact_name: Контактное имя
+    comment: Комментарий
+    phone_number_or_email: Номер телефона или электронная почта

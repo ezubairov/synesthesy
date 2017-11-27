@@ -1,9 +1,58 @@
+#index-banner.parallax-container
+  .section.no-pad-bot
+    .container
+      br
+      br
+      h1.header.center.teal-text.text-lighten-2 Parallax Template
+      .row.center
+        h5.header.col.s12.light A modern responsive front-end framework based on Material Design
+      .row.center
+        a#download-button.btn-large.waves-effect.waves-light.teal.lighten-1 href="http://materializecss.com/getting-started.html"  Get Started
+      br
+      br
+  .parallax
+    img alt=("Unsplashed background img 1") src="assets/pinkflowers.jpg" /
 .container
-  = render partial: 'about'
-  = render partial: 'photos'
-  = render partial: 'advantages'
-  .row.mb-3.content-block
-    .col-sm-12
-      h2.text-center Остались вопросы? Напишите мне!
-      h5.mb-3.text-center Укажите свой номер телефона или электронную почту, и я отвечу вам в ближайшее время
-      = form
+  .section
+    /! Icon Section
+    .row
+      .col.s12.m4
+        .icon-block
+          h2.center.brown-text
+            i.material-icons flash_on
+          h5.center Проверенная косметика
+          p.light Выполнение макияжа исключительно качественными, оригинальными продуктами известных и надежных марок: Smashbox, Urban Decay, Estee Lauder и других мировых брендов
+      .col.s12.m4
+        .icon-block
+          h2.center.brown-text
+            i.material-icons group
+          h5.center Продуманный макияж
+          p.light Грамотное использование косметики в соответствии с вашими индивидуальными особенностями. Умеренное сочетание трендов и классики. Обсуждение пожеланий и совместный подбор гармоничного образа
+      .col.s12.m4
+        .icon-block
+          h2.center.brown-text
+            i.material-icons settings
+          h5.center Комфорт без лишних слов
+          p.light Мягкость и аккуратность движений превращают сеанс макияжа в расслабляющую SPA-процедуру. Умиротворяющая обстановка позволяет отдохнуть от рутины и зарядиться энергией
+.parallax-container.valign-wrapper
+  .section.no-pad-bot
+    .container
+      .row.center
+        h5.header.col.s12.light Расскажите о вашей любимой музыке и ароматах и превратите мое рабочее место в ваш персональный рай
+  .parallax
+    img alt=("Unsplashed background img 2") src="assets/flowers-street-wallpaper-44579-45708-hd-wallpapers.jpg" /
+.container
+  .section
+    .row
+      .col.s12.center
+        h3
+          i.mdi-content-send.brown-text
+        h4 Свяжитесь со мной
+        = form
+.parallax-container.valign-wrapper
+  .section.no-pad-bot
+    .container
+      .row.center
+        h5.header.col.s12.light Позвольте себе по-настоящему особенный макияж, который выделит вас из толпы и подчеркне
+  .parallax
+    img alt=("Unsplashed background img 3") src="assets/liliah-wallpaper-2048x1152.jpg" /

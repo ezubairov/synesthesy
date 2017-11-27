@@ -5,6 +5,9 @@ require_relative '../lib/synesthesy'
 require_relative '../apps/admin/application'
 require_relative '../apps/web/application'
 
+require_relative './initializers/locale.rb'
+require_relative './initializers/shrine.rb'
+
 Hanami.configure do
   mount Admin::Application, at: '/admin'
   mount Web::Application, at: '/'

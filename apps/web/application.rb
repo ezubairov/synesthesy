@@ -243,7 +243,7 @@ module Web
         connect-src 'self';
         img-src 'self' https: data:;
         style-src 'self' 'unsafe-inline' https:;
-        font-src 'self' https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net/ https://fonts.gstatic.com/;
+        font-src 'self' https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net/ https://fonts.gstatic.com/ https://cdnjs.cloudflare.com;
         object-src 'none';
         plugin-types application/pdf;
         child-src 'self';
