@@ -6,4 +6,5 @@
 root to: 'home#index'
 
 resources :sessions, only: [:new, :create]
-resources :photos
+resources :photos, only: [:index, :new, :create, :edit, :update, :destroy]
+resources :prices, only: [:index, :new, :create, :edit, :update, :destroy]

@@ -3,26 +3,37 @@ module Admin::Views::Photos
     include Admin::View
 
     def form
-      form_for :photo, routes.photos_path, enctype: 'multipart/form-data' do
-        div do
-          label :name
-          text_field :name
+      form_for :photo, routes.photo_path(photo.id), enctype: 'multipart/form-data', values: {photo: photo}, method: :patch do
+        div class: 'row' do
+          div class: 'input-field col s12' do
+            label 'Название', for: :name
+            text_field :name
+          end
         end
-        div do
-          label :comment
-          text_field :comment
+        div class: 'row' do
+          div class: 'input-field col s12' do
+            label 'Комментарий', for: :comment
+            text_field :comment
+          end
         end
-        div do
-          label :favorite
-          check_box :favorite
+        div class: 'row' do
+          div class: 'col s12' do
+            check_box :favorite
+            label :favorite
+          end
         end
-        div do
-          label :image
-          hidden_field :image
-          file_field :image
+        div class: 'row' do
+          div class: 'file-field input-field col s12' do
+            div class: 'btn' do
+              raw('<span>Фото</span><input type="file" name="photo[image]" id="photo-image">')
+            end
+            div class: 'file-path-wrapper' do
+              raw('<input class="file-path validate" type="text" placeholder="Upload one or more files">')
+            end
+          end
         end
 
-        submit 'Сохранить'
+        submit 'Сохранить', class: 'btn btn-primary waves-effect waves-light'
       end
     end
   end

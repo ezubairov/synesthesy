@@ -92,3 +92,13 @@ footer.page-footer {
   right: 12px !important;
   max-width: 100% !important;
 }
+
+ul.horizontal {
+  li {
+    display: inline;
+  }
+
+  li:not(last-child) {
+    margin-right: 10px;
+  }
+}

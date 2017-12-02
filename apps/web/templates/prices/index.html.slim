@@ -1,0 +1,42 @@
+- if main_services.any?
+  .container
+    .section
+      .row
+        .col.s8.offset-s2
+          table.highlight.bordered
+            thead
+              tr
+                th.center-align colspan='2' Основные услуги
+            tbody
+              - main_services.each do |price|
+                tr
+                  td= price.title
+                  td #{price.price} руб.
+.parallax-container.valign-wrapper style="min-height: 200px;"
+  .section.no-pad-bot
+    .container
+      .row.center
+        h5.header.col.s12.light
+          | Получите приветственную скидку 15% на любую услугу!
+          | Акция действует до 31 декабря и суммируется с другими скидками
+          br
+          br
+          a.btn href="/#contact_me" Оставить заявку
+
+  .parallax
+    img alt=("Unsplashed background img 2") src="assets/wonderful-hipster-wallpaper-47212-48729-hd-wallpapers.jpg" /
+
+- if additional_services.any?
+  .container
+    .section
+      .row
+        .col.s8.offset-s2
+          table.highlight.bordered
+            thead
+              tr
+                th.center-align colspan='3' Дополнительные услуги
+            tbody
+              - additional_services.each do |price|
+                tr
+                  td= price.title
+                  td #{price.price} руб.

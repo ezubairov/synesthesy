@@ -1,0 +1,21 @@
+.container
+  .section
+    .row
+      .col.s8.offset-s2
+        form action="/admin/prices" id="price-form" method="POST" accepts-charset="utf-8"
+          input type="hidden" name="_csrf_token" value="#{csrf_token}"
+          .row
+            .input-field.col.s12
+              label for="price-title" Название услуги
+              input type="text" id="price-title" name="price[title]"
+          .row
+            .input-field.col.s12
+              label for="price-price" Цена
+              input type="text" id="price-price" name="price[price]"
+          .row
+            .col.s12
+              input type="checkbox" name="price[additional]" id="price-additional" value="1"
+              label for="price-additional" Дополнительная услуга?
+          .row
+            .col.s12
+              button type="submit" class="btn btn-primary waves-effect waves-light" Отправить

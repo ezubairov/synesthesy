@@ -238,11 +238,11 @@ module Admin
         frame-ancestors 'self';
         base-uri 'self';
         default-src 'none';
-        script-src 'self';
+        script-src 'self' https://code.jquery.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net;
         connect-src 'self';
         img-src 'self' https: data:;
         style-src 'self' 'unsafe-inline' https:;
-        font-src 'self';
+        font-src 'self' https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net/ https://fonts.gstatic.com/ https://cdnjs.cloudflare.com;
         object-src 'none';
         plugin-types application/pdf;
         child-src 'self';

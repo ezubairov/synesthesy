@@ -1,0 +1,4 @@
+$ ->
+  $('#lightgallery').lightGallery({
+    selector: '.item'
+  })

@@ -1,0 +1,49 @@
+.container
+  .section
+    .row.center-align
+      a.btn-floating.green href="/admin/prices/new"
+        i.material-icons note_add
+    .row
+      .col.s8.offset-s2
+        table.highlight.bordered
+          thead
+            tr
+              th Услуга
+              th Цена
+          tbody
+            - if main_services.any?
+              tr
+                th.center-align colspan='3' Основные услуги
+              - main_services.each do |price|
+                tr
+                  td= price.title
+                  td #{price.price} руб.
+                  td.right-align
+                    ul.horizontal
+                      li
+                        a.btn-floating.blue  href="/admin/prices/#{price.id}/edit"
+                          i.material-icons mode_edit
+                      li
+                        form action="/admin/prices/#{price.id}" method="POST" style="display: inline"
+                          input type="hidden" name="_csrf_token" value="#{csrf_token}"
+                          input type="hidden" name="_method" value="delete"
+                          button.btn-floating.red type="submit"
+                            i.material-icons delete
+            - if additional_services.any?
+              tr
+                th.center-align colspan='3' Дополнительные услуги
+              - additional_services.each do |price|
+                tr
+                  td= price.title
+                  td #{price.price} руб.
+                  td.right-align
+                    ul.horizontal
+                      li
+                        a.btn-floating.blue href="/admin/prices/#{price.id}/edit"
+                          i.material-icons mode_edit
+                      li
+                        form action="/admin/prices/#{price.id}" method="POST" style="display: inline"
+                          input type="hidden" name="_csrf_token" value="#{csrf_token}"
+                          input type="hidden" name="_method" value="delete"
+                          button.btn-floating.red type="submit"
+                            i.material-icons delete

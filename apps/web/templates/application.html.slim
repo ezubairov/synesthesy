@@ -1,3 +1,4 @@
+- color = %w(red pink purple deep-purple indigo blue light-blue cyan teal green light-green lime amber orange deep-orange brown grey blue-gray black).sample
 doctype html
 html
   head
@@ -12,9 +13,9 @@ html
     meta(content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport")
     = stylesheet 'main'
   body
-    = render partial: 'shared/header'
+    = render partial: 'shared/header', locals: {color: color}
     = yield
-    = render partial: 'shared/footer'
+    = render partial: 'shared/footer', locals: {color: color}
 
     script(src="https://code.jquery.com/jquery-3.2.1.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous")

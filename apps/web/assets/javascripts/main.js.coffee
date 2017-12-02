@@ -1,4 +1,6 @@
 $ ->
+  $('#lightgallery').lightGallery()
+
   $('.button-collapse').sideNav()
   $('.parallax').parallax()
 

@@ -7,4 +7,6 @@ root to: 'home#index'
 
 post '/request', to: 'request#create', as: :request
 
-# get '*slug', to: 'page#show', as: :pageget '/prices', to: 'prices#index'
+get '/prices', to: 'prices#index', as: :prices
+
+get '/gallery', to: 'gallery#index', as: :gallery

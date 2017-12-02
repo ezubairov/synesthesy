@@ -1,0 +1,6 @@
+.container
+  .section
+    #lightgallery
+      - photos.each do |photo|
+        a href="#{photo.image_url(:original)}" data-sub-html="<h4>#{photo.name}</h4><p>#{photo.comment}</p>"
+          img src="#{photo.image_url(:thumbnail)}"

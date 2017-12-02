@@ -1,12 +1,10 @@
 module Admin::Controllers::Photos
-  class Edit
+  class Destroy
     include Admin::Action
 
-    expose :photo
-
     def call(params)
-      @photo = PhotoRepository.new.find(params[:id])
-
+      PhotoRepository.new.delete(params[:id])
+      redirect_to routes.photos_path
     end
   end
 end
