@@ -16,7 +16,7 @@ module Web::Controllers::Request
         )
         status 200, 'Спасибо за обращение!</br>Я отвечу вам в ближайшее время'.to_json
       else
-        status 400, @validation.errors(full: true)
+        status 400, @validation.errors
                                .values
                                .flatten
                                .map{ |val| "<li>#{val}</li>" }

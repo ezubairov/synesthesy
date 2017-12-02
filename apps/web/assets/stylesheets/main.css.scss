@@ -88,9 +88,14 @@ footer.page-footer {
 }
 
 #toast-container {
-  top: 12px !important;
+  top: 0 !important;
   right: 12px !important;
   max-width: 100% !important;
+
+  .toast-message {
+    word-wrap: normal;
+    word-break: normal;
+  }
 }
 
 ul.horizontal {
