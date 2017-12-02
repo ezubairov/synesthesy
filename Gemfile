@@ -31,11 +31,11 @@ group :development do
   # See: http://hanamirb.org/guides/projects/code-reloading
   gem 'shotgun'
 
-  # gem 'capistrano', '~> 3.7'
-  # gem 'capistrano-hanami'
-  # gem 'capistrano3-puma'
-  # gem 'capistrano-bundler'
-  # gem 'capistrano-rvm'
+  gem 'capistrano', '~> 3.7', require: false
+  gem 'capistrano-bundler'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rvm'
+  gem 'capistrano-hanami', require: false
 end
 
 group :test, :development do
