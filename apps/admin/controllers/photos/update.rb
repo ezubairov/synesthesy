@@ -5,9 +5,9 @@ module Admin::Controllers::Photos
     params do
       required(:photo).schema do
         optional(:name).filled
-        optional(:comment).filled
+        optional(:comment)
         required(:favorite).filled
-        required(:image).filled
+        optional(:image).filled
       end
     end
 

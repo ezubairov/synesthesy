@@ -6,7 +6,6 @@ module Admin::Controllers::Photos
 
     def call(params)
       @photo = PhotoRepository.new.find(params[:id])
-
     end
   end
 end

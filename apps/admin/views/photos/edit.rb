@@ -23,12 +23,15 @@ module Admin::Views::Photos
           end
         end
         div class: 'row' do
+          img src: photo.image_url(:thumbnail)
+        end
+        div class: 'row' do
           div class: 'file-field input-field col s12' do
             div class: 'btn' do
               raw('<span>Фото</span><input type="file" name="photo[image]" id="photo-image">')
             end
             div class: 'file-path-wrapper' do
-              raw('<input class="file-path validate" type="text" placeholder="Upload one or more files">')
+              raw(%Q(<input class="file-path validate" type="text" placeholder="Upload one or more files" value="#{photo.image[:original].original_filename}">))
             end
           end
         end

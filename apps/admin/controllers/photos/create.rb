@@ -5,13 +5,14 @@ module Admin::Controllers::Photos
     params do
       required(:photo).schema do
         optional(:name).filled
-        optional(:comment).filled
+        optional(:comment)
         required(:favorite).filled
         required(:image).filled
       end
     end
 
     def call(params)
+      binding.pry
       if params.valid?
         params[:photo][:favorite] = params[:photo][:favorite] == '1'
         photo = Photo.new(params[:photo])
