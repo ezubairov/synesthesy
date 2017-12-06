@@ -1,5 +1,5 @@
 - all_colors = %w(red pink purple deep-purple indigo blue light-blue cyan teal green light-green lime yellow amber orange deep-orange brown grey blue-gray black)
-nav.white role="navigation"
+nav role="navigation"
   .nav-wrapper.container
     a#logo-container.brand-logo href="/" class="#{all_colors.sample}-text" Synesthesy
     ul.right.hide-on-med-and-down
@@ -9,3 +9,12 @@ nav.white role="navigation"
         a href="/admin/photos" Фотографии
       li
         a href="/admin/prices" Ценники
+    ul#nav-mobile.side-nav
+      li
+        a href="/" Главная
+      li
+        a href="/admin/photos" Фотографии
+      li
+        a href="/admin/prices" Ценники
+    a.button-collapse data-activates="nav-mobile" href="#"
+      i.material-icons menu
