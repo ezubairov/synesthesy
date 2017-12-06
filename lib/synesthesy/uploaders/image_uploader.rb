@@ -10,7 +10,7 @@ class ImageUploader < Shrine
   process(:store) do |io, context|
     original = io.download
 
-    instagram_size = resize_to_limit!(original, 293, 293)
+    instagram_size = resize_and_pad!(original, 293, 293)
 
     {original: io, thumbnail: instagram_size}
   end

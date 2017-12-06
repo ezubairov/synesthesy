@@ -9,7 +9,7 @@ set :pty, true
 set :use_sudo, false
 set :repo_url, 'https://github.com/ezubairov/synesthesy.git'
 set :linked_files, fetch(:linked_files, []).push(*%w{.env.production config/nginx.conf})
-set :linked_dirs, fetch(:linked_dirs, []).push(*%w{tmp log})
+set :linked_dirs, fetch(:linked_dirs, []).push(*%w{tmp log public/uploads})
 set :puma_bind,  "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
 set :puma_state, "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid, "#{shared_path}/tmp/pids/puma.pid"

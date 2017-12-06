@@ -1,5 +1,7 @@
 $ ->
-  $('#lightgallery').lightGallery()
+  $('#lightgallery').lightGallery({
+    selector: '.item'
+  })
 
   $('.button-collapse').sideNav()
   $('.parallax').parallax()

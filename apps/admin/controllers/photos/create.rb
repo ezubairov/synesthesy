@@ -12,7 +12,6 @@ module Admin::Controllers::Photos
     end
 
     def call(params)
-      binding.pry
       if params.valid?
         params[:photo][:favorite] = params[:photo][:favorite] == '1'
         photo = Photo.new(params[:photo])
