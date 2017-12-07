@@ -1,0 +1,7 @@
+nav ul a {
+  color: #444; }
+
+ul.horizontal li {
+  display: inline; }
+ul.horizontal li:not(last-child) {
+  margin-right: 10px; }
