@@ -4,6 +4,13 @@
     $('#lightgallery').lightGallery({
       selector: '.item'
     });
+    $('.carousel').carousel({
+      fullWidth: true,
+      indicators: true
+    });
+    setInterval((function() {
+      return $('.carousel').carousel('next');
+    }), 5000);
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     toastr.options.escapeHtml = false;

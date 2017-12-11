@@ -3,6 +3,15 @@ $ ->
     selector: '.item'
   })
 
+  $('.carousel').carousel({
+    fullWidth: true
+    indicators: true
+  })
+
+  setInterval (->
+    $('.carousel').carousel('next')
+  ), 5000
+
   $('.button-collapse').sideNav()
   $('.parallax').parallax()
 

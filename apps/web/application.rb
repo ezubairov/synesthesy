@@ -239,7 +239,7 @@ module Web
         frame-ancestors 'self';
         base-uri 'self';
         default-src 'none';
-        script-src 'self' https://code.jquery.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net;
+        script-src 'self' https://code.jquery.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net http://platform.instagram.com/;
         connect-src 'self';
         img-src 'self' https: data:;
         style-src 'self' 'unsafe-inline' https:;
@@ -247,7 +247,7 @@ module Web
         object-src 'none';
         plugin-types application/pdf;
         child-src 'self';
-        frame-src 'self';
+        frame-src 'self' https://www.instagram.com/;
         media-src 'self'
       }
 
