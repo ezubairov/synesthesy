@@ -10,3 +10,4 @@ post '/request', to: 'request#create', as: :request
 get '/prices', to: 'prices#index', as: :prices
 
 get '/gallery', to: 'gallery#index', as: :gallery
+get '/about_me', to: 'about_me#index'

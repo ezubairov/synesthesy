@@ -55,6 +55,16 @@ footer.page-footer {
   background-color: #125688;
   color: white; }
 
+.fa.fa-phone {
+  padding: 6px 5px 6px 6px;
+  width: 35px;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #318845;
+  color: white; }
+
 .parallax-container {
   background-color: rgba(0, 0, 0, 0.2); }
 
@@ -73,3 +83,7 @@ ul.horizontal li {
   display: inline; }
 ul.horizontal li:not(last-child) {
   margin-right: 10px; }
+
+ul.circled > li {
+  list-style-type: circle;
+  margin-left: 15px; }

@@ -239,8 +239,8 @@ module Web
         frame-ancestors 'self';
         base-uri 'self';
         default-src 'none';
-        script-src 'self' https://code.jquery.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net http://platform.instagram.com/;
-        connect-src 'self';
+        script-src 'self' 'unsafe-inline' https://mc.yandex.ru/ https://code.jquery.com https://cdnjs.cloudflare.com https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net http://platform.instagram.com/;
+        connect-src 'self' https://mc.yandex.ru/;
         img-src 'self' https: data:;
         style-src 'self' 'unsafe-inline' https:;
         font-src 'self' https://maxcdn.bootstrapcdn.com https://cdn.jsdelivr.net/ https://fonts.gstatic.com/ https://cdnjs.cloudflare.com;
